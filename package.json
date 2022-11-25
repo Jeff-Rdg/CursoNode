@@ -4,7 +4,9 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "test": "jest",
+    "secure-mode": "jest --watch --verbose=true"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,11 @@
   },
   "homepage": "https://github.com/Jeff-Rdg/CursoNode#readme",
   "devDependencies": {
-    "eslint": "^8.28.0"
+    "eslint": "^8.28.0",
+    "jest": "23.6.0",
+    "supertest": "3.3.0"
+  },
+  "dependencies": {
+    "express": "4.16.4"
   }
 }
